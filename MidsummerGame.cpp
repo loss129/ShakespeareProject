@@ -4,56 +4,58 @@
 
 using namespace std;
 void displayMenu(){
-	cout << "=================MENU===================" << endl;
-	cout << "22: Display Questions" << endl;
-	cout << "23: Make A Guess" << endl;
-	cout << "24: Quit" << endl;
-	cout << "========================================" << endl;
-	return;
+    cout << "=================MENU===================" << endl;
+    cout << "22: Display Questions" << endl;
+    cout << "23: Make A Guess" << endl;
+    cout << "24: Quit" << endl;
+    cout << "========================================" << endl;
+    return;
 }
 
 bool guess(string name, int character){
-	switch (character) {
+    switch (character) {
     case 1:
         if (name == "Hermia"){
-        	return true;
+            return true;
         }
         else {
-        	return false;
+            return false;
         }
         break;
     case 2:
         if (name == "Lysander"){
-        	return true;
+            return true;
         }
         else {
-        	return false;
+            return false;
         }
         break;
     case 3:
         if (name == "Bottom"){
-        	return true;
+            return true;
         }
         else {
-        	return false;
+            return false;
         }
         break;
     case 4:
         if (name == "Demetrius"){
-        	return true;
+            return true;
         }
         else {
-        	return false;
+            return false;
         }
         break;
     case 5:
        if (name == "Helena"){
-        	return true;
+            return true;
         }
         else {
-        	return false;
+            return false;
         }
         break;
+    default:
+        return false;
     }
 
 }
@@ -91,35 +93,35 @@ string Qlist(int n)
         return "Who is the last person you would like to be?";
         break;
     case 11:
-    	return "What is the weirdest thing about you?";
-    	break;
+        return "What is the weirdest thing about you?";
+        break;
     case 12:
-    	return "How would you describe your love life?";
-    	break;
+        return "How would you describe your love life?";
+        break;
     case 13:
-    	return "What is something you are self-conscious about?";
-    	break;
+        return "What is something you are self-conscious about?";
+        break;
     case 14:
-    	return "What was the biggest turning point in your life?";
-    	break;
+        return "What was the biggest turning point in your life?";
+        break;
     case 15:
-    	return "How would you describe yourself?";
-    	break;
+        return "How would you describe yourself?";
+        break;
     case 16:
-    	return "What is the worst event of your life?";
-    	break;
+        return "What is the worst event of your life?";
+        break;
     case 17:
-    	return "";
-    	break;
+        return "Is there something you are passionate about? If so, what?";
+        break;
     case 18:
-    	return "";
-    	break;
+        return "What is the biggest obstacle you’ve had to overcome?";
+        break;
     case 19:
-    	return "";
-    	break;
+        return "What is an average day in your life like?";
+        break;
     case 20:
-    	return "";
-    	break;
+        return "What does your dream day look like?";
+        break;
     default:
         return "Invalid Question";
     }
@@ -157,35 +159,35 @@ string Hermia(int n)
         return "The last person I would want to be is someone who has no one to love.";
         break;
     case 11:
-    	return "";
-    	break;
+        return "I am willing to stand up for myself and those I love in the face of our society’s patriarchal standards.";
+        break;
     case 12:
-    	return "";
-    	break;
+        return "For a time my love life was very stressful but everything worked out and I couldn’t be happier!";
+        break;
     case 13:
-    	return "";
-    	break;
+        return "I am self-conscious about my height and wish I was taller.";
+        break;
     case 14:
-    	return "";
-    	break;
+        return "When my love and I decided to run away and spend our lives together!";
+        break;
     case 15:
-    	return "";
-    	break;
+        return "I am persistent and bold; I will always fight for what I believe in or for love.";
+        break;
     case 16:
-    	return "";
-    	break;
+        return "When my dear beloved seemed to have lost his love for me, but perhaps that was just a dream.";
+        break;
     case 17:
-    	return "";
-    	break;
+        return "I am more passionate about the man I love than anything else in my life.";
+        break;
     case 18:
-    	return "";
-    	break;
+        return "I had to overcome my father’s persistent attempts to control my life and force me into a marriage I had no interest in.";
+        break;
     case 19:
-    	return "";
-    	break;
+        return "I spend most of my days with my husband, now that he is mine I never want to be without him.";
+        break;
     case 20:
-    	return "";
-    	break;
+        return "I would love nothing more than a full day with just my love and a beautiful day perhaps strolling in the woods.";
+        break;
     default:
         return "That doesn't look like anything to me";
     }
@@ -224,35 +226,35 @@ string Lysander(int n)
         return "The last person I would like to be is someone who doesn’t truly love the one they are with.";
         break;
     case 11:
-    	return "";
-    	break;
+        return "";
+        break;
     case 12:
-    	return "";
-    	break;
+        return "";
+        break;
     case 13:
-    	return "";
-    	break;
+        return "";
+        break;
     case 14:
-    	return "";
-    	break;
+        return "";
+        break;
     case 15:
-    	return "";
-    	break;
+        return "";
+        break;
     case 16:
-    	return "";
-    	break;
+        return "";
+        break;
     case 17:
-    	return "";
-    	break;
+        return "";
+        break;
     case 18:
-    	return "";
-    	break;
+        return "";
+        break;
     case 19:
-    	return "";
-    	break;
+        return "";
+        break;
     case 20:
-    	return "";
-    	break;
+        return "";
+        break;
     default:
         return "That doesn't look like anything to me";
     }
@@ -291,35 +293,35 @@ string Bottom(int n)
         return "I’d hate to be someone who acts like an ass.";
         break;
     case 11:
-    	return "";
-    	break;
+        return "";
+        break;
     case 12:
-    	return "";
-    	break;
+        return "";
+        break;
     case 13:
-    	return "";
-    	break;
+        return "";
+        break;
     case 14:
-    	return "";
-    	break;
+        return "";
+        break;
     case 15:
-    	return "";
-    	break;
+        return "";
+        break;
     case 16:
-    	return "";
-    	break;
+        return "";
+        break;
     case 17:
-    	return "";
-    	break;
+        return "";
+        break;
     case 18:
-    	return "";
-    	break;
+        return "";
+        break;
     case 19:
-    	return "";
-    	break;
+        return "";
+        break;
     case 20:
-    	return "";
-    	break;
+        return "";
+        break;
     default:
         return "That doesn't look like anything to me.";
     }
@@ -358,35 +360,35 @@ string Demetrius(int n)
         return "I would hate to be a person who doesn’t truly love someone.";
         break;
     case 11:
-    	return "";
-    	break;
+        return "";
+        break;
     case 12:
-    	return "";
-    	break;
+        return "";
+        break;
     case 13:
-    	return "";
-    	break;
+        return "";
+        break;
     case 14:
-    	return "";
-    	break;
+        return "";
+        break;
     case 15:
-    	return "";
-    	break;
+        return "";
+        break;
     case 16:
-    	return "";
-    	break;
+        return "";
+        break;
     case 17:
-    	return "";
-    	break;
+        return "";
+        break;
     case 18:
-    	return "";
-    	break;
+        return "";
+        break;
     case 19:
-    	return "";
-    	break;
+        return "";
+        break;
     case 20:
-    	return "";
-    	break;
+        return "";
+        break;
     default:
         return "That doesn't look like anything to me.";
     }
@@ -425,35 +427,35 @@ string Helena(int n)
         return "I would hate to be a person who isn’t truly loved.";
         break;
     case 11:
-    	return "";
-    	break;
+        return "";
+        break;
     case 12:
-    	return "";
-    	break;
+        return "";
+        break;
     case 13:
-    	return "";
-    	break;
+        return "";
+        break;
     case 14:
-    	return "";
-    	break;
+        return "";
+        break;
     case 15:
-    	return "";
-    	break;
+        return "";
+        break;
     case 16:
-    	return "";
-    	break;
+        return "";
+        break;
     case 17:
-    	return "";
-    	break;
+        return "";
+        break;
     case 18:
-    	return "";
-    	break;
+        return "";
+        break;
     case 19:
-    	return "";
-    	break;
+        return "";
+        break;
     case 20:
-    	return "";
-    	break;
+        return "";
+        break;
     default:
         return "That doesn't look like anything to me.";
     }
@@ -483,75 +485,75 @@ int main()
     string guess1;
     // Start the while loop that will run the game and handle the input from the user
     while (playing) {
-    	cout << "Enter 21 to see the menu\n" << endl;
+        cout << "Enter 21 to see the menu\n" << endl;
         // Take in the question number and store it in the variable "question"
         int question;
         cin >> question;
         if (question == 21) {
-        	displayMenu();
+            displayMenu();
         }
         else if (question == 22){
-        	for(int i = 1; i < 21; i++){
-        		cout << i << ". " << Qlist(i) << "\n" << endl;
-        	}
+            for(int i = 1; i < 21; i++){
+                cout << i << ". " << Qlist(i) << "\n" << endl;
+            }
         }
         else if (question == 23){
-        	cout << "Who do you think I am?\n" << endl;
-        	cin >> guess1;
-        	correctGuess = guess(guess1, randomCharacter);
-        	if (correctGuess){
-        		cout << "Congratulations!! You won!!" << endl;
-        		playing = false;
-        	}
-        	else{
-        		cout << "You did not guess correctly :( keep going. That counts as a question" << endl;
-        		asked++;
-        	}
+            cout << "Who do you think I am?\n" << endl;
+            cin >> guess1;
+            correctGuess = guess(guess1, randomCharacter);
+            if (correctGuess){
+                cout << "Congratulations!! You won!!" << endl;
+                playing = false;
+            }
+            else{
+                cout << "You did not guess correctly :( keep going. That counts as a question" << endl;
+                asked++;
+            }
         }
         else if (question == 24){
-        	cout << "Ok thanks for playing." << endl;
-        	playing = false;
+            cout << "Ok thanks for playing." << endl;
+            playing = false;
         }
-        else if ( 1 <= question <= 20) {
-        	// Make a switch case statement to handle which character the computer will act like
+        else if ( 1 <= question && question <= 20) {
+            // Make a switch case statement to handle which character the computer will act like
         // Call the character function with the question number to get the response from the character
-	        switch (randomCharacter) {
-	        case 1:
-	            cout << "You asked: " << Qlist(question) << "\n" << endl;
-	            answer = Hermia(question);
-	            cout << answer << "\n" << endl;
-	            cout << "What question would you like to ask next?\n" << endl;
-	            break;
-	        case 2:
-	        	cout << "You asked: " << Qlist(question) << "\n" << endl;
-	            answer = Lysander(question);
-	            cout << answer << "\n" << endl;
-	            cout << "What question would you like to ask next?\n" << endl;
-	            break;
-	        case 3:
-	        	cout << "You asked: " << Qlist(question) << "\n" << endl;
-	            answer = Bottom(question);
-	            cout << answer << endl;
-	            cout << "What question would you like to ask next?\n" << endl;
-	            break;
-	        case 4:
-	        	cout << "You asked: " << Qlist(question) << endl;
-	            answer = Demetrius(question);
-	            cout << answer << endl;
-	            cout << "What question would you like to ask next?" << endl;
-	            break;
-	        case 5:
-	        	cout << "You asked: " << Qlist(question) << endl;
-	            answer = Helena(question);
-	            cout << answer << endl;
-	            cout << "What question would you like to ask next?" << endl;
-	            break;
-	        }
-	        // Increase the number of questions the user has asked
-        	asked++;
+            switch (randomCharacter) {
+            case 1:
+                cout << "You asked: " << Qlist(question) << "\n" << endl;
+                answer = Hermia(question);
+                cout << answer << "\n" << endl;
+                cout << "What question would you like to ask next?\n" << endl;
+                break;
+            case 2:
+                cout << "You asked: " << Qlist(question) << "\n" << endl;
+                answer = Lysander(question);
+                cout << answer << "\n" << endl;
+                cout << "What question would you like to ask next?\n" << endl;
+                break;
+            case 3:
+                cout << "You asked: " << Qlist(question) << "\n" << endl;
+                answer = Bottom(question);
+                cout << answer << endl;
+                cout << "What question would you like to ask next?\n" << endl;
+                break;
+            case 4:
+                cout << "You asked: " << Qlist(question) << endl;
+                answer = Demetrius(question);
+                cout << answer << endl;
+                cout << "What question would you like to ask next?" << endl;
+                break;
+            case 5:
+                cout << "You asked: " << Qlist(question) << endl;
+                answer = Helena(question);
+                cout << answer << endl;
+                cout << "What question would you like to ask next?" << endl;
+                break;
+            }
+            // Increase the number of questions the user has asked
+            asked++;
         }
         else{
-        	cout << "That doesn’t look like anything to me." << endl;
+            cout << "That doesn’t look like anything to me." << endl;
         }
         
         
