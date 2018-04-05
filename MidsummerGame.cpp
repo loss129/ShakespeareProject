@@ -501,13 +501,13 @@ int main()
         // Call the character function with the question number to get the response from the character
 	        switch (randomCharacter) {
 	        case 1:
-	            cout << "You asked: " << Qlist(question) << endl;
+	            cout << "You asked: " << Qlist(question) << "\n" << endl;
 	            answer = Hermia(question);
 	            cout << answer << endl;
 	            cout << "What question would you like to ask next?" << endl;
 	            break;
 	        case 2:
-	        	cout << "You asked: " << Qlist(question) << endl;
+	        	cout << "You asked: " << Qlist(question) << "\n" << endl;
 	            answer = Lysander(question);
 	            cout << answer << endl;
 	            cout << "What question would you like to ask next?" << endl;
