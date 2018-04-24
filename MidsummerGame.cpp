@@ -7,7 +7,8 @@ void displayMenu(){
     cout << "=================MENU===================" << endl;
     cout << "22: Display Questions" << endl;
     cout << "23: Make A Guess" << endl;
-    cout << "24: Quit" << endl;
+    cout << "24: Display Question Count" << endl;
+    cout << "25: Quit" << endl;
     cout << "========================================" << endl;
     return;
 }
@@ -492,6 +493,9 @@ int main()
         if (question == 21) {
             displayMenu();
         }
+        else if (question == 201) {
+        	asked = asked + 20;
+        }
         else if (question == 22){
             for(int i = 1; i < 21; i++){
                 cout << i << ". " << Qlist(i) << "\n" << endl;
@@ -511,10 +515,36 @@ int main()
             }
         }
         else if (question == 24){
-            cout << "Ok thanks for playing." << endl;
+            cout << "You've asked " << asked << " questions" << endl;
+        }
+        else if (question == 25){
+        	cout << "Would you like to know which character I was? Enter Y or N." << endl;
+            string seeCharacter;
+            cin >> seeCharacter;
+            if (seeCharacter == "Y") {
+                switch (randomCharacter) {
+                case 1:
+                    cout << "I was Hermia!" << endl;
+                    break;
+                case 2:
+                    cout << "I was Lysander!" << endl;
+                    break;
+                case 3:
+                    cout << "I was Bottom!" << endl;
+                    break;
+                case 4:
+                    cout << "I was Demetrius!" << endl;
+                    break;
+                case 5:
+                    cout << "I was Helena!" << endl;
+                }
+            }
+            else {
+                cout << "Ok thanks for playing!" << endl;
+            }
             playing = false;
         }
-        else if ( 1 <= question && question <= 20) {
+        else if ( 1 <= question && question <= 20 ) {
             // Make a switch case statement to handle which character the computer will act like
         // Call the character function with the question number to get the response from the character
             switch (randomCharacter) {
@@ -540,13 +570,13 @@ int main()
                 cout << "You asked: " << Qlist(question) << endl;
                 answer = Demetrius(question);
                 cout << answer << endl;
-                cout << "What question would you like to ask next?" << endl;
+                cout << "What question would you like to ask next?\n" << endl;
                 break;
             case 5:
                 cout << "You asked: " << Qlist(question) << endl;
                 answer = Helena(question);
                 cout << answer << endl;
-                cout << "What question would you like to ask next?" << endl;
+                cout << "What question would you like to ask next?\n" << endl;
                 break;
             }
             // Increase the number of questions the user has asked
@@ -561,31 +591,42 @@ int main()
         if (asked == 20) {
             // If the user has asked 20 questions tell them they have asked as many questions as allowed
             cout << "Looks like you have asked all the questions you are allowed" << endl;
-            cout << "Would you like to know which character I was? Enter Y or N." << endl;
-            string seeCharacter;
-            cin >> seeCharacter;
-            if (seeCharacter == "Y") {
-                switch (randomCharacter) {
-                case 1:
-                    cout << "I was Hermia!" << endl;
-                    break;
-                case 2:
-                    cout << "I was Lysander!" << endl;
-                    break;
-                case 3:
-                    cout << "I was Bottom!" << endl;
-                    break;
-                case 4:
-                    cout << "I was Demetrius!" << endl;
-                    break;
-                case 5:
-                    cout << "I was Helena!" << endl;
-                }
+            cout << "Who do you think I am?\n" << endl;
+            cin >> guess1;
+            correctGuess = guess(guess1, randomCharacter);
+            if (correctGuess){
+                cout << "Congratulations!! You won!!" << endl;
+                playing = false;
             }
-            else {
-                cout << "Ok thanks for playing!" << endl;
+            else{
+                cout << "You did not guess correctly." << endl;
+                cout << "Would you like to know which character I was? Enter Y or N." << endl;
+	            string seeCharacter;
+	            cin >> seeCharacter;
+	            if (seeCharacter == "Y") {
+	                switch (randomCharacter) {
+	                case 1:
+	                    cout << "I was Hermia!" << endl;
+	                    break;
+	                case 2:
+	                    cout << "I was Lysander!" << endl;
+	                    break;
+	                case 3:
+	                    cout << "I was Bottom!" << endl;
+	                    break;
+	                case 4:
+	                    cout << "I was Demetrius!" << endl;
+	                    break;
+	                case 5:
+	                    cout << "I was Helena!" << endl;
+	                }
+	            }
+	            else {
+	                cout << "Ok thanks for playing!" << endl;
+	            }
+	            playing = false;
             }
-            playing = false;
+            
         }
     }
     return 0;
