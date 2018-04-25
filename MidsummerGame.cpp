@@ -227,34 +227,34 @@ string Lysander(int n)
         return "The last person I would like to be is someone who doesn’t truly love the one they are with.";
         break;
     case 11:
-        return "";
+        return "The weirdest thing about me is that I am a hopeless romantic and very poetic.";
         break;
     case 12:
-        return "";
+        return "My love life gave me a great deal of trouble as I was told the one loved could not be with me but now everything is as perfect as could be.";
         break;
     case 13:
-        return "";
+        return "I am self conscious about not having a strong enough backbone.";
         break;
     case 14:
-        return "";
+        return "The biggest turning point in my life was when my love and I took our fates into our own hands and ran away to be together.";
         break;
     case 15:
-        return "";
+        return "I would say I am romantic and will do whatever I need for love.";
         break;
     case 16:
-        return "";
+        return "When the duke sided with my beloved’s father to force her to marry another.";
         break;
     case 17:
-        return "";
+        return "My love for my new spouse is so strong it makes all my other passions seem pale and weak.";
         break;
     case 18:
-        return "";
+        return "I had to overcome the duke’s commands that would force my love to marry another.";
         break;
     case 19:
-        return "";
+        return "I spend the greater part of all my days with my beautiful spouse.";
         break;
     case 20:
-        return "";
+        return "Every day spent with my love is like a dream.";
         break;
     default:
         return "That doesn't look like anything to me";
@@ -294,34 +294,34 @@ string Bottom(int n)
         return "I’d hate to be someone who acts like an ass.";
         break;
     case 11:
-        return "";
+        return "It is weird how unnaturally talented at acting I am.";
         break;
     case 12:
-        return "";
+        return "My love life is about what one would expect from such a gifted actor as myself.";
         break;
     case 13:
-        return "";
+        return "How could a person as talented as I ever be self-conscious about anything?";
         break;
     case 14:
-        return "";
+        return "Going from simply being a weaver to becoming an actor was a huge turning point for me.";
         break;
     case 15:
-        return "";
+        return "How to describe one as talented as myself is truly a challenge. Since I do not wish to carry on about my incredible acting ability for too long I will simply describe myself as magnificent.";
         break;
     case 16:
-        return "";
+        return "The worst event of my life is every moment I spend off the stage not getting the recognition deserve.";
         break;
     case 17:
-        return "";
+        return "I am passionate about my acting troupe and the fame I will receive when my talents are recognized.";
         break;
     case 18:
-        return "";
+        return "I had to overcome my humble beginnings to become a renowned actor.";
         break;
     case 19:
-        return "";
+        return "I spend most of my days still working as a weaver but I know soon I will make a name for myself as an actor.";
         break;
     case 20:
-        return "";
+        return "My dream day would consist of putting on a massive play for all the royalty in the region with me playing all of the major roles.";
         break;
     default:
         return "That doesn't look like anything to me.";
@@ -361,34 +361,34 @@ string Demetrius(int n)
         return "I would hate to be a person who doesn’t truly love someone.";
         break;
     case 11:
-        return "";
+        return "The weirdest thing about me is how I obstinately pursued a woman who did not want me while ignoring my love for a long time.";
         break;
     case 12:
-        return "";
+        return "My love life was very frustrating for a long time as the one I loved refused my marriage even though her father and the duke ordered it but now I am finally content.";
         break;
     case 13:
-        return "";
+        return "I am sometimes self-conscious about my personality and how I treated my love before I discovered my love for her.";
         break;
     case 14:
-        return "";
+        return "The biggest turning point of my life was the night of the strange dreams I had but when I awoke I had a newfound love.";
         break;
     case 15:
-        return "";
+        return "I would describe myself as persistent, I will take that which I believe should be mine.";
         break;
     case 16:
-        return "";
+        return "The worst event of my life was when my promised spouse ran away with another.";
         break;
     case 17:
-        return "";
+        return "I have learned to become passionate about my spouse whom I love deeply.";
         break;
     case 18:
-        return "";
+        return "Having to overcome my previous love and choose my new love, although it felt like there was some other force at work.";
         break;
     case 19:
-        return "";
+        return "I spend most days with my spouse learning to love the right way.";
         break;
     case 20:
-        return "";
+        return "I think I already had my dream day, when everything changed and I married my newfound love.";
         break;
     default:
         return "That doesn't look like anything to me.";
@@ -428,34 +428,34 @@ string Helena(int n)
         return "I would hate to be a person who isn’t truly loved.";
         break;
     case 11:
-        return "";
+        return "The weirdest thing about me is I am almost unable to accept the idea that someone would love me.";
         break;
     case 12:
-        return "";
+        return "My love life was absolutely tragic for the longest time but I think it is now perfect.";
         break;
     case 13:
-        return "";
+        return "I am very self-conscious about my looks, I think many men ignored me to pursue my prettier friend.";
         break;
     case 14:
-        return "";
+        return "The biggest turning point in my life was when  my love began loving me back.";
         break;
     case 15:
-        return "";
+        return "I would say I am skeptical about love but also want nothing more than to be loved.";
         break;
     case 16:
-        return "";
+        return "The worst event of my life was when my betrothed abandoned me to be with my friend instead.";
         break;
     case 17:
-        return "";
+        return "I am passionate about my love, I never gave up on him even when he abandoned me.";
         break;
     case 18:
-        return "";
+        return "I had to overcome my love’s abandonment and harsh treatment of me.";
         break;
     case 19:
-        return "";
+        return "I am spending nearly all my days with my spouse and making sure he never leaves me again.";
         break;
     case 20:
-        return "";
+        return "I think my dream day already happened when my love began loving me back and we got married.";
         break;
     default:
         return "That doesn't look like anything to me.";
@@ -494,7 +494,7 @@ int main()
             displayMenu();
         }
         else if (question == 201) {
-        	asked = asked + 20;
+            asked = asked + 20;
         }
         else if (question == 22){
             for(int i = 1; i < 21; i++){
@@ -518,7 +518,7 @@ int main()
             cout << "You've asked " << asked << " questions" << endl;
         }
         else if (question == 25){
-        	cout << "Would you like to know which character I was? Enter Y or N." << endl;
+            cout << "Would you like to know which character I was? Enter Y or N." << endl;
             string seeCharacter;
             cin >> seeCharacter;
             if (seeCharacter == "Y") {
@@ -601,30 +601,30 @@ int main()
             else{
                 cout << "You did not guess correctly." << endl;
                 cout << "Would you like to know which character I was? Enter Y or N." << endl;
-	            string seeCharacter;
-	            cin >> seeCharacter;
-	            if (seeCharacter == "Y") {
-	                switch (randomCharacter) {
-	                case 1:
-	                    cout << "I was Hermia!" << endl;
-	                    break;
-	                case 2:
-	                    cout << "I was Lysander!" << endl;
-	                    break;
-	                case 3:
-	                    cout << "I was Bottom!" << endl;
-	                    break;
-	                case 4:
-	                    cout << "I was Demetrius!" << endl;
-	                    break;
-	                case 5:
-	                    cout << "I was Helena!" << endl;
-	                }
-	            }
-	            else {
-	                cout << "Ok thanks for playing!" << endl;
-	            }
-	            playing = false;
+                string seeCharacter;
+                cin >> seeCharacter;
+                if (seeCharacter == "Y") {
+                    switch (randomCharacter) {
+                    case 1:
+                        cout << "I was Hermia!" << endl;
+                        break;
+                    case 2:
+                        cout << "I was Lysander!" << endl;
+                        break;
+                    case 3:
+                        cout << "I was Bottom!" << endl;
+                        break;
+                    case 4:
+                        cout << "I was Demetrius!" << endl;
+                        break;
+                    case 5:
+                        cout << "I was Helena!" << endl;
+                    }
+                }
+                else {
+                    cout << "Ok thanks for playing!" << endl;
+                }
+                playing = false;
             }
             
         }
