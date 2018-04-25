@@ -515,7 +515,7 @@ int main()
             }
         }
         else if (question == 24){
-            cout << "You've asked " << asked << " questions" << endl;
+            cout << "You've asked " << asked << " question(s)" << endl;
         }
         else if (question == 25){
             cout << "Would you like to know which character I was? Enter Y or N." << endl;
@@ -549,34 +549,34 @@ int main()
         // Call the character function with the question number to get the response from the character
             switch (randomCharacter) {
             case 1:
-                cout << "You asked: " << Qlist(question) << "\n" << endl;
+                cout << "You asked: " << Qlist(question) << endl;
                 answer = Hermia(question);
                 cout << answer << "\n" << endl;
-                cout << "What question would you like to ask next?\n" << endl;
+                cout << "What question would you like to ask next?" << endl;
                 break;
             case 2:
-                cout << "You asked: " << Qlist(question) << "\n" << endl;
+                cout << "You asked: " << Qlist(question) << endl;
                 answer = Lysander(question);
                 cout << answer << "\n" << endl;
-                cout << "What question would you like to ask next?\n" << endl;
+                cout << "What question would you like to ask next?" << endl;
                 break;
             case 3:
-                cout << "You asked: " << Qlist(question) << "\n" << endl;
+                cout << "You asked: " << Qlist(question) << endl;
                 answer = Bottom(question);
-                cout << answer << endl;
-                cout << "What question would you like to ask next?\n" << endl;
+                cout << answer << "\n" << endl;
+                cout << "What question would you like to ask next?" << endl;
                 break;
             case 4:
                 cout << "You asked: " << Qlist(question) << endl;
                 answer = Demetrius(question);
-                cout << answer << endl;
-                cout << "What question would you like to ask next?\n" << endl;
+                cout << answer << "\n" << endl;
+                cout << "What question would you like to ask next?" << endl;
                 break;
             case 5:
                 cout << "You asked: " << Qlist(question) << endl;
                 answer = Helena(question);
-                cout << answer << endl;
-                cout << "What question would you like to ask next?\n" << endl;
+                cout << answer << "\n" << endl;
+                cout << "What question would you like to ask next?" << endl;
                 break;
             }
             // Increase the number of questions the user has asked
@@ -590,7 +590,7 @@ int main()
         // Check if the user has asked 20 quesitons yet
         if (asked == 20) {
             // If the user has asked 20 questions tell them they have asked as many questions as allowed
-            cout << "Looks like you have asked all the questions you are allowed" << endl;
+            cout << "Looks like you have reached the question limit." << endl;
             cout << "Who do you think I am?\n" << endl;
             cin >> guess1;
             correctGuess = guess(guess1, randomCharacter);
